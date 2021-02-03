@@ -18,7 +18,12 @@ Ez a felvételi feladat kiindulási pontja.
 ``` 
 
 ## Feladatok
-Angular 8 front-end fejlesztése
+### Backend
+* POST metódus, amely egy email címmel hozza létre az alkalmazott (OfficialEmployee) entitást.
+* GET metódus, amely a szerver státuszát adja vissza (String "OK"), amely külön kontrollerben kap helyet.
+* Office entitás bővítése: vezető személy (OfficialEmployee) és az ott dolgozó beosztottak (List<OfficialEmployee>) beállításának lehetősége.
+* Profile kezelés: szerver portjának módosítása 8080-ra aktív otherPort profil esetén.
+### Frontend
 * entitás felvétele    
   ```shell script
     curl -X POST \
