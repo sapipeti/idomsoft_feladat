@@ -14,6 +14,12 @@ public class Office {
     @OneToMany(mappedBy = "office")
     private List<OfficeAddress> address;
 
+    @OneToMany(mappedBy = "workPlace")
+    private List<OfficialEmployee> workers;
+    
+    @OneToOne(mappedBy = "bossWorkPlace")
+    private OfficialEmployee boss;
+    
     private String name;
 
     public Long getId() {
@@ -39,4 +45,22 @@ public class Office {
     public void setName(String name) {
         this.name = name;
     }
+
+    public List<OfficialEmployee> getWorkers() {
+        return workers;
+    }
+
+    public void setWorkers(List<OfficialEmployee> workers) {
+        this.workers = workers;
+    }
+
+    public OfficialEmployee getBoss() {
+        return boss;
+    }
+
+    public void setBoss(OfficialEmployee boss) {
+        this.boss = boss;
+    }
+    
+    
 }

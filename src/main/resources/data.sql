@@ -1,13 +1,13 @@
-INSERT INTO OFFICIAL_EMPLOYEE VALUES
-    (SEQ_EMP.nextval,'Elek', 'Teszt'),
-    (SEQ_EMP.nextval,'Virág', 'Mezei'),
-    (SEQ_EMP.nextval,'Eszter', 'Vincs'),
-    (SEQ_EMP.nextval,'Nóra', 'Disz'),
-    (SEQ_EMP.nextval,'Lenke', 'Eszet'),
-    (SEQ_EMP.nextval,'Jakab', 'Gipsz');
-
 INSERT INTO OFFICE VALUES
     (SEQ_OFF.nextval,'IdomSoft Zrt.');
+
+INSERT INTO OFFICIAL_EMPLOYEE VALUES
+    (SEQ_EMP.nextval,'Elek', 'Teszt',1,null),
+    (SEQ_EMP.nextval,'Virág', 'Mezei',null,1),
+    (SEQ_EMP.nextval,'Eszter', 'Vincs',null,1),
+    (SEQ_EMP.nextval,'Nóra', 'Disz',null,1),
+    (SEQ_EMP.nextval,'Lenke', 'Eszet',null,1),
+    (SEQ_EMP.nextval,'Jakab', 'Gipsz',null,1);
 
 INSERT INTO OFFICE_ADDRESS VALUES
     (SEQ_ADD.nextval,'4400',1),
