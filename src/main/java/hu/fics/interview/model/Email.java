@@ -41,4 +41,13 @@ public class Email {
     public void setEmployee(OfficialEmployee employee) {
         this.employee = employee;
     }
+
+    public Email(String address, OfficialEmployee employee) {
+        this.address = address;
+        this.employee = employee;
+    }
+
+    public Email() {
+    }
+    
 }
